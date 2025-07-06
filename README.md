@@ -33,3 +33,5 @@ Game state :
 - `time_step` : The current time step in the game.
 - `remaining_wagons` : The number of wagons available for the agent to use.
 - `remaining_tracks` : The number of tracks available for the agent to use.
+
+The game has two modes : "user" and "agent". In "user" mode, the game state is rendered using pygame, allowing a human player to interact with the environment. In "agent" mode, the game state is not rendered, and a reinforcement learning agent can interact with the environment programmatically.

@@ -1,7 +1,38 @@
 [project]
 name = "minimetro-rl"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simplified mini-metro game environment for reinforcement learning"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
+requires-python = ">=3.8"
+dependencies = [
+    "pygame>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.910"
+]
+
+[project.scripts]
+minimetro-rl = "minimetro_rl.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["minimetro_rl*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
