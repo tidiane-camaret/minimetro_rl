@@ -4,11 +4,11 @@ from typing import Literal
 
 @dataclass
 class GameConfig:
-    grid_size: int = 10
+    grid_size: int = 20
     max_lines: int = 3
-    station_spawn_rate: int = 50
+    station_spawn_rate: int = 100
     max_stations: int = 10
-    passenger_spawn_rate: int = 10
+    passenger_spawn_rate: int = 50
     train_capacity: int = 6
     station_capacity: int = 10
     max_timesteps: int = 10000

@@ -10,8 +10,8 @@ def main():
     parser = argparse.ArgumentParser(description='MinimetroRL Game')
     parser.add_argument('--mode', choices=['agent', 'pygame'], default='agent',
                         help='Game mode: agent (text) or pygame (visual)')
-    parser.add_argument('--grid-size', type=int, default=10,
-                        help='Grid size (default: 10)')
+    parser.add_argument('--grid-size', type=int, default=15,
+                        help='Grid size (default: 15)')
     parser.add_argument('--max-lines', type=int, default=3,
                         help='Maximum number of lines (default: 3)')
     parser.add_argument('--max-steps', type=int, default=None,
