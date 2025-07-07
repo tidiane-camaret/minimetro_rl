@@ -1,9 +1,7 @@
 import pygame
 from typing import Dict, Any, Tuple, Optional
-import sys
-sys.path.append('..')  # Adjust path to import GameConfig
-from minimetro_rl.types import StationType, TileType
-from minimetro_rl.config import GameConfig
+#from minimetro_rl.types import StationType, TileType
+from src.config import GameConfig
 
 
 class PygameRenderer:

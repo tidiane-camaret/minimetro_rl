@@ -1,7 +1,9 @@
 import argparse
-from .config import GameConfig
-from .game import MinimetroGame, SimpleAgent
-from .environment import MinimetroEnvironment
+import sys
+sys.path.append('..')  # Adjust path to import GameConfig
+from src.config import GameConfig
+from src.game import MinimetroGame, SimpleAgent
+from src.environment import MinimetroEnvironment
 
 
 def main():

@@ -1,7 +1,7 @@
-from .config import GameConfig, RewardConfig
-from .environment import MinimetroEnvironment
-from .game import MinimetroGame, SimpleAgent
-from .types import Action, Position, StationType, TileType
+from .src.config import GameConfig, RewardConfig
+from src.environment import MinimetroEnvironment
+from src.game import MinimetroGame, SimpleAgent
+from src.types import Action, Position, StationType, TileType
 
 __version__ = "0.1.0"
 __all__ = [

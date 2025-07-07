@@ -5,9 +5,9 @@ import os
 sys.path.insert(0, os.path.dirname(__file__))
 
 import random
-from config import GameConfig, RewardConfig
-from game_engine import GameEngine
-from types import Action, Position
+from src.config import GameConfig, RewardConfig
+from src.game_engine import GameEngine
+from src.types import Action, Position
 
 
 def main():

@@ -51,7 +51,7 @@ class MinimetroEnvironment:
         
         lines.append(f"Timestep: {obs['timestep']}, Score: {obs['score']}")
         lines.append(f"Game Over: {obs['game_over']}")
-        lines.append()
+        #lines.append()
         
         grid = obs['grid']
         for y in range(len(grid)):
@@ -69,7 +69,7 @@ class MinimetroEnvironment:
                 row += " "
             lines.append(row)
         
-        lines.append()
+        #lines.append()
         
         for i, line_data in enumerate(obs['lines']):
             lines.append(f"Line {i}: {len(line_data['tracks'])} tracks")
@@ -77,7 +77,7 @@ class MinimetroEnvironment:
                 lines.append(f"  Train at {line_data['train_pos']} with {len(line_data['train_passengers'])} passengers")
         
         if obs['passengers']:
-            lines.append()
+            #lines.append()
             lines.append("Passengers waiting:")
             for pos, passenger_dict in obs['passengers'].items():
                 total = sum(passenger_dict.values())

@@ -1,8 +1,8 @@
 import unittest
-from .config import GameConfig, RewardConfig
-from .environment import MinimetroEnvironment
-from .game import MinimetroGame, SimpleAgent
-from .types import Position, StationType, TileType, Action
+from src.config import GameConfig, RewardConfig
+from src.environment import MinimetroEnvironment
+from src.game import MinimetroGame, SimpleAgent
+from src.types import Position, StationType, TileType, Action
 
 
 class TestMinimetroEnvironment(unittest.TestCase):
@@ -90,7 +90,7 @@ class TestGameTypes(unittest.TestCase):
         self.assertEqual(pos1, pos3)
     
     def test_station_passenger_management(self):
-        from .types import Station
+        from src.types import Station
         
         station = Station(Position(0, 0), StationType.CIRCLE)
         
@@ -105,7 +105,7 @@ class TestGameTypes(unittest.TestCase):
         self.assertFalse(station.add_passenger(StationType.TRIANGLE))
     
     def test_train_capacity(self):
-        from .types import Train
+        from src.types import Train
         
         train = Train(Position(0, 0))
         
