@@ -1,2 +1,3 @@
 *.pyc
 __pycache__/
+minimetro_rl.egg-info/
